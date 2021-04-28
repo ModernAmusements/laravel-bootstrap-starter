@@ -1,0 +1,18 @@
+.container-fluid {
+    .card {
+      border-color: lightgrey;
+      .border {
+        border-left: 1px solid grey;
+      }
+      .badge {
+        padding: 1em;
+        text-align: center;
+        max-width: fit-content;
+        max-width: intrinsic;
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        z-index: 1;
+      }
+    }
+  }
