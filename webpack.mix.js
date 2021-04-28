@@ -11,8 +11,9 @@ let mix = require("laravel-mix");
  |
  */
 mix.js([
-  "assets/js/app.js", 
-  "assets/js/animation.js"
+  "assets/js/app.js",
+  "assets/js/formSubmission.js",
+  "assets/js/holder.min.js"
     ],"public/js"
 );
 
@@ -20,6 +21,3 @@ mix.sass("assets/sass/app.scss", "public/css");
 
 mix.browserSync("https://laravel-mix-kit.test/");
 
-if (mix.inProduction()) {
-  mix.version().sourceMaps();
-}
