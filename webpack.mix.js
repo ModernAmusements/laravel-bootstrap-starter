@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+let mix = require("laravel-mix");
 
 /*
  |--------------------------------------------------------------------------
@@ -10,13 +10,16 @@ let mix = require('laravel-mix');
  | file for your application, as well as bundling up your JS files.
  |
  */
-mix.js('assets/js/app.js', 'public/js');
-mix.sass('assets/sass/app.scss', 'public/css');
+mix.js([
+  "assets/js/app.js", 
+  "assets/js/animation.js"
+    ],"public/js"
+);
 
-mix.browserSync('https://laravel-mix-kit.test/')
+mix.sass("assets/sass/app.scss", "public/css");
 
+mix.browserSync("https://laravel-mix-kit.test/");
 
 if (mix.inProduction()) {
-    mix.version()
-       .sourceMaps();
-  }
+  mix.version().sourceMaps();
+}

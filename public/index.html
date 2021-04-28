@@ -5,45 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel mix starter with Vue</title>
+    <title>Laravel mix starter</title>
 
     <!-- Scripts -->
-    <script src="js/app.js" defer></script>
+    <script src="/public/js/app.js"></script>
 
     <!-- Styles -->
-    <link href="css/app.css" rel="stylesheet">
+    <link href="/public/css/app.css" rel="stylesheet">
 </head>
 <body>
-    <main>
-    <section class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div class="card card-default">
-              <img
-                class="card-img-top"
-                src="https://images.unsplash.com/photo-1566908829550-e6551b00979b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60"
-                alt="House"
-              />
-              <span class="badge badge-secondary">New</span>
-              <article class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card's content.
-                </p>
-                <div class="row">
-                  <div class="col-sm mr-auto">1.954 €</div>
-                  <div class="col-sm d-flex justify-content-end">
-                    <div class="text-muted">3 Zimmer</div>
-                    <span class="border mx-2"></span>
-                    <div class="text-muted">ab 35 m<sup>2</sup></div>
-                  </div>
-                </div>
-              </article>
-            </div>
+    <div class="container-fluid">
+      <h3 class="text-primary text-center">jQuery Playground</h3>
+      <div class="row">
+        <div class="col-xs-6">
+          <h4>#left-well</h4>
+          <div class="well" id="left-well">
+            <button class="btn btn-primary target" id="target1">#target1</button>
+            <button class="btn btn-primary target" id="target2">#target2</button>
+            <button class="btn btn-primary target" id="target3">#target3</button>
           </div>
         </div>
-      </section>
-    </main>
+        <div class="col-xs-6">
+          <h4>#right-well</h4>
+          <div class="well" id="right-well">
+            <button class="btn btn-primary target" id="target4">#target4</button>
+            <button class="btn btn-primary target" id="target5">#target5</button>
+            <button class="btn btn-primary target" id="target6">#target6</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
